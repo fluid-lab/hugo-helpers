@@ -24,18 +24,26 @@ See the [Shortcode Templates](https://gohugo.io/templates/shortcode-templates/) 
 
 Create a caption and a longer description for an image, video, etc.
 
-A caption appears immediately below the element, which can be expanded to reveal a longer text description.
+A caption appears immediately below the element, which can be expanded to reveal
+a longer text description.
 
-Example:
+Input:
+caption - A short description for the image. Should not duplicate the Alt text.
+description (optional) - A longer description of the image with additional
+                         detail.
 
+Usage Example:
 ```
 {{% figure
     caption="Apples are harvested in the fall."
-    description="A photo of a boy climbing a ladder to pick ripe, red apples on a tree. A older man is holding the ladder at the bottom. Both of them are smiling. On the ground there is a large basket of apples which have already been picked. There are 4 other apple trees nearby. The sky is blue." %}}
-![A photo of apples being picked at an apple orchard.](/images/apple.png)
+    description="A photo of a boy climbing a ladder to pick ripe, red apples on
+                 a tree. A older man is holding the ladder at the bottom. Both
+                 of them are smiling. On the ground there is a large basket of
+                 apples which have already been picked. There are 4 other apple
+                 trees nearby. The sky is blue." %}}
+    ![A photo of apples being picked at an apple orchard.](/images/apple.png)
 {{% /figure %}}
 ```
-
 ## License
 
 Copyright 2017 OCAD University, BSD 3-Clause License.
